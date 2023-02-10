@@ -1,0 +1,468 @@
+.root {
+    background-color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+.header {
+    max-width: 880px;
+    margin: 45px auto 0;
+    padding-bottom: 41px;
+    border-bottom: 1px solid rgba(84, 84, 84, .7);
+} 
+
+.header__logo {
+    opacity: 1;
+    width: 142px;
+    height: 33px;
+}
+
+.profile {
+    display: grid;
+    max-width: 880px;
+    grid-template-columns: 120px 610px 150px;
+    grid-template-rows: 60px 60px; 
+    margin: 41px auto 0;
+}
+
+.profile__avatar {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile__person_name {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.profile__person_job {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.editButton {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: none;
+    padding: 0;
+    margin-left: 18px;
+    background: none;
+    padding: 0;
+    white-space: nowrap;
+    background-image: url("/images/Edit\ Button.svg");
+}
+
+.editButton_pic {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+}
+
+.addButton {
+    grid-row: 1 / span 2;
+    grid-column: 3;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-size: 22px;
+    width: 150px;
+    height: 50px;
+    background: none;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 1;
+}
+
+/* .popup {
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 430px;
+    grid-template-rows: 60px 78px 57px 135px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    max-width: 430px;
+    max-height: 330px;
+    top: 195px;
+    visibility: hidden;
+    position: fixed;
+    left: calc((100vw - 430px) / 2);
+} */
+
+.popup {
+    visibility: hidden;
+    position: fixed;
+    display: block;
+    max-width: 430px;
+    top: calc((100vh - 330px) / 2);
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin-left: calc((100vw - 430px) / 2);
+    z-index: 3;
+    height: 330px;
+}
+
+ .close_popup {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    background: none;
+    visibility: hidden;
+    background-image: url("/images/Close\ Icon.svg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: 32px;
+    top: 155px;
+    right: calc((100vw / 2) - 270px);
+    padding: 0;
+    z-index: 3;
+} 
+
+/* .edit-title {
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: 34px;
+    margin-left: 36px;
+    margin-bottom: 54px;
+    height: 23px;
+} */
+
+.edit-title {
+    position: relative;
+    margin-top: 34px;
+    margin-left: 36px;
+    margin-bottom: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #000000;
+}
+
+/* .input-name {
+    grid-row: 2;
+    grid-column: 1;
+    width: 358px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 0;
+} */
+
+.input-name {
+    width: 358px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 0;
+    margin-left: 36px;
+    margin-top: 41px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+/* .input-job {
+    grid-row: 3;
+    grid-column: 1;
+    width: 358px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    margin: 0 auto;
+    padding: 0;
+} */
+
+.input-job {
+    width: 358px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 0;
+    margin-left: 36px;
+    margin-top: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+/* .save-form {
+    grid-row: 4;
+    grid-column: 1;
+    background: #000000;
+    border-radius: 2px;
+    color: #FFFFFF;
+    width: 358px;
+    max-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 37px;
+} */
+
+.save-form {
+    background: #000000;
+    border-radius: 2px;
+    color: #FFFFFF;
+    width: 358px;
+    height: 50px;
+    margin-left: 36px;
+    margin-top: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.elements {
+    display: grid;
+    max-width: 880px;
+    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+    grid-template-rows: repeat(2, 361px);
+    row-gap: 20px;
+    column-gap: 17px;
+    margin: 51px auto 0;
+}
+
+.card {
+    width: 282px;
+    height: 361px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.card__foto {
+    width: 282px;
+    height: 282px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__caption {
+    display: flex;
+    margin: auto 21px auto 15px;
+    justify-content: space-between;
+}
+
+.card__caption_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;        
+}
+
+.footer__copyright {
+    color: #545454;
+    max-width: 880px;
+    margin: 67px auto 60px;
+}
+
+
+input[type="text"]:focus {
+    border: none;
+    border-bottom: 3px solid rgb(70, 70, 70);
+}
+
+input[type="button"]:hover {
+    opacity: 0.6;
+}
+
+.like_button {
+    border: none;
+    width: 22px;
+    height: 19px;
+    background-color: aliceblue;
+    background-image: url("/images/like.svg");
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 320px) {
+
+    .header__logo {
+        width: 104px;
+        height: 24.5px;
+        margin-left: 27px;
+    }
+
+    .profile {
+        display: grid;
+        grid-template-columns: 282px;
+        grid-template-rows: 188px 40px 50px 86px;
+        margin: 0;
+        height: 364px;
+        max-width: 282px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+    }
+
+    .profile__avatar {
+        grid-row: 1;
+        grid-column: 1;
+        max-width: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 42px;
+        padding-bottom: 26px;
+    }
+
+
+    .profile__person_name {
+        grid-row: 2;
+        grid-column: 1;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 33px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile__person_job {
+        grid-row: 3;
+        grid-column: 1;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .editButton_pic {
+        width: 18px;
+    }
+
+    .addButton {
+        grid-row: 4;
+        grid-column: 1;
+        border: 2px solid #FFFFFF;
+        border-radius: 2px;
+        color: #FFFFFF;
+        font-size: 22px;
+        width: 282px;
+        height: 50px;
+    }
+
+    .card {
+        width: 282px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .popup {
+        width: 282px;
+        max-height: 322px;
+        padding: 0;
+        margin-left: 0;
+        left: 19px;
+    }
+
+    .edit-title {
+        max-width: 238px;
+        height: 22px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+        margin-top: 25px;
+        margin-left: 22px;
+    }
+
+    .input-name {
+        max-width: 238px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        margin-left: 22px;
+        margin-top: 62px;
+    }
+
+    .input-job {      
+        max-width: 238px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        margin-left: 22px;
+        margin-top: 17px;
+    }
+
+    .close_popup {
+        width: 20px;
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        top: 87px;
+        right: calc(100vw - 301px);    
+        background-size: 20px;
+    }
+
+    .save-form {
+        max-width: 238px;
+        margin-left: 22px;
+    }
+
+    .popup_container {
+        max-width: 320px;
+        max-height: 100vh;
+
+    }
+}
+
+
+
