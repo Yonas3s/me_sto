@@ -13,5 +13,7 @@
     .profile__button_edit {
         width: 18px;
         height: 18px;
+        white-space: nowrap;
+        background-size: 18px;
     }
 }
