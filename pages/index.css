@@ -71,7 +71,7 @@
     background: none;
     padding: 0;
     white-space: nowrap;
-    background-image: url("/images/Edit\ Button.svg");
+    background-image: url("/images/editButton.svg");
 }
 
 .editButton_pic {
@@ -132,7 +132,7 @@
     height: 32px;
     background: none;
     visibility: hidden;
-    background-image: url("/images/Close\ Icon.svg");
+    background-image: url("/images/closeIcon.svg");
     background-position:center;
     background-repeat:no-repeat;
     background-size: 32px;
