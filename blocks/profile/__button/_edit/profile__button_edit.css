@@ -9,7 +9,7 @@
     background-image: url("../../../../images/editButton.svg");
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
     .profile__button_edit {
         width: 18px;
         height: 18px;
